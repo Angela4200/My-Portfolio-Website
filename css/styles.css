@@ -1,0 +1,65 @@
+
+.logo{
+	width:200px;
+	position: left;
+}
+
+body{
+	background:maroon;
+	color: #fff;
+	font-family: comic san ms, regular;
+	font-size: 27px;
+	font-weight: 400;
+	line-height: 1.65em;
+	margin:50;
+	max-width: 960px;
+	padding: 40px 10px;
+}
+
+.slider{
+	width:800px;
+	height: 500px;
+	border-radius:10px;
+	overflow: hidden;
+}
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+section.hero {
+	width: 85%;
+	height:300px;
+	display: block;
+	background: url("../images/paint.jpg") center;
+	object-fit:fill;
+	float: right;
+	position: relative;
+}
+section.hero {
+	width: 85%;
+	height:300px;
+	display: block;
+	background: url("../images/light movement.jpg") center;
+	object-fit:fill;
+	float: right;
+	position: relative;
+}
+section.hero {
+	width: 85%;
+	height:300px;
+	display: block;
+	background: url("../images/shine fabric.jpg") center;
+	object-fit:fill;
+	float: right;
+	position: relative;
+{
+section.hero {
+	width: 85%;
+	height:300px;
+	display: block;
+	background: url("../images/fire.jpg") center;
+	object-fit:fill;
+	float: right;
+	position: relative;
+{
