@@ -11,55 +11,26 @@
 
 <!-- BODY SECTION STARTS -->
 	<body>
-
-		<!--image slider starts-->
-		<div class="slider">
-			<div class="slider">
-				<!-- radio button starts-->
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
-				<input type="radio" name="radio-btn" id="radio4">
-				<!--radio button ends-->
-				<!-- slide images starts-->
-				<div class="slide first">
-					<img src="paint.jpg" alt="">
-				</div>
-				<div class="slide">
-					<img src="light movement.jpg" alt="">
-				</div>
-				<div class="slide first">
-					<img src="fire.jpg" alt="">
-				</div>
-				<div class="slide">
-					<img src="shine fabric.jpg" alt="">
-				</div>
-				<!--Slide Images end-->
-				<!--automatic navigation starts-->
-				<div class="navigation-auto">
-					<div class="auto-btn1"></div>
-					<div class="auto-btn2"></div>
-					<div class="auto-btn3"></div>
-					<div class="auto-btn4"></div>
-				</div>
-				<!--Automatic navigation ends-->
+		<header>
+			<div class="logo">
+				<a href="index.html" title="Go Back Home to Homepage"><img src="images/avas-logo.svg" alt="AVA's Portfolio" /></a>
 			</div>
-			<!--manual navigation start-->
-			<div class="navigation-manual">
-				<label for="radio1" class="manual-btn"></label>
-				<label for="radio2" class="manual-btn"></label>
-				<label for="radio3" class="manual-btn"></label>
-				<label for="radio4" class="manual-btn"></label>
+			<div class="header-slider">
+				<ul> 
+					<li><img src="images/paint.jpg" alt="paint"></li>
+				</ul>
 			</div>
-			<!--manual navigation ends-->
 
-		</div>
-		<!--Image slider end-->
-
+		</header>
 
 		<section>
-			<div class="logo">
-				<a href="index.html" title="Go Back Home to Homepage"><img src="images/ava's logo.svg" alt="AVA's Portfolio" /></a>
+			<div class="navigation">
+				<ul>
+					<li><a href="about.html" title="About">About</a></li>
+					<li><a href="contact.html" title="Contact">Contact</a></li>
+					<li><a href="resume.html" title="Resume">Resume</a></li>
+					<li><a href="my portfolio.html" title="My Portfolio">My Portfolio</a></li>
+				</ul>
 			</div>
 		</section>
 
@@ -70,29 +41,73 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="navigation">
-				<ul>
-					<li><a href="about.html title="About">About</a></li>
-					<li><a href="contact.html title="Contact">Contact</a></li>
-					<li><a href="resume.html title="Resume">Resume</a></li>
-					<li><a href="my portfolio.html title="My Portfolio">My Portfolio</a></li>
-				</ul>
-
-			</div>
-		</section>
-
+		
 		<section>
 		 <div class="Welcome paragraphs">
 			<h2> Welcome</h2>
 			<p>To the artist website feel free to look at the art works within this site. Hope you enjoy the site and the art practice. You are welcome to reach out to the artist for questions, comments, or a possible opportunity for the artist to expanded their art practice.</p>
-			<p>There are also other links you can find the artist work on vimeo here https://vimeo.com/411080702. There you will find some video work and installation art that the artist has produced. Thank you for taking the time to explore that site and viewing the artist art work. </p>
+			<p>There are also other links you can find the artist work on vimeo here <a href="url">https://vimeo.com/411080702</a>. There you will find some video work and installation art that the artist has produced. Thank you for taking the time to explore that site and viewing the artist art work. </p>
 		</div>
+
 		</section>
 
+		<!--IMAGE SLIDER STARTS-->
+		<div class="slider">
+			<div class="slider">
+				<!-- RADIO BUTTONS STARTS-->
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<!--RADIO BUTTON ENDS-->
+				<!-- SLIDE IMAGES STARTS-->
+				<div class="slide first">
+					<img src="images/paint.jpg" width="800" height="400" alt="">
+				</div>
+				<div class="slide">
+					<img src="images/light movement.jpg" width="800" height="400" alt="">
+				</div>
+				<div class="slide">
+					<img src="images/fire.jpg" width="800" height="400" alt="">
+				</div>
+				<div class="slide">
+					<img src="images/shine fabric.jpg" width="800" height="400" alt="">
+				</div>
+				<!--SLIDE IMAGES ENDS-->
+				<!--AUTOMATIC NAVIGATION STARTS-->
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+				</div>
+				<!--AUTOMATIC NAVIGATION ENDS-->
+			</div>
+			<!--MANUAL NAVIGATION STARTS-->
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+			</div>
+			<!--MANUAL NAVIGATION ENDS-->
+
+		</div>
+		<!--IMAGE SLIDER ENDS-->
 
 		<div>
 		</div>
+		<script type="text/javascript">
+			var counter= 1;
+			setInterval(function(){
+				document.getElelmentById('radio' + counter)
+				counter++;
+				if(counter > 4){
+					counter = 1;
+				}
+			},5000);
+		</script>
+
 	</body>
 <!-- BODY SECTION ENDS -->
 
