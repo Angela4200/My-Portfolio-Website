@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html>
-
 <!-- HEAD SECTION STARTS -->
-	<head>
-		<title>AVA's Portfolio</title>
-		<link href="css/styles.css" rel="stylesheet">
-		<meta charset="utf-8">
-		<title>Image Slider</title>
-	</head>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AVA's Portfolio</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<title>Image Slider</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
 <!-- HEAD SECTION ENDS -->
 
 <!-- BODY SECTION STARTS -->
@@ -16,16 +17,50 @@
 				<a href="index.html" title="Go Back Home to Homepage"><img src="images/avas-logo.svg" alt="AVA's Portfolio" /></a>
 			</div>
 
-			<div class="header-slider">
-				<ul> 
-					<li><img src="images/paint.jpg" alt="paint"></li>
-				</ul>
-			</div>
-		<section>
-		 <div class="hero">
+<!-- SLIDESHOW STARTS -->
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+  			<div class="numbertext">1 / 4</div>
+  			<img src="images/paint.jpg" style="width:100%">
+  			<div class="text">Caption Text</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">2 / 4</div>
+  			<img src="images/light-movement.jpg" style="width:100%">
+  			<div class="text">Caption Two</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">3 / 4</div>
+  			<img src="images/fire.jpg" style="width:100%">
+  			<div class="text">Caption Three</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">4 / 4</div>
+  			<img src="images/shine-fabric.jpg" style="width:100%">
+  			<div class="text">Caption Four</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span>
+  			<span class="dot" onclick="currentSlide(2)"></span>
+  			<span class="dot" onclick="currentSlide(3)"></span>
+  			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+<!-- SLIDESHOW ENDS -->
+
+		<section class="hero">
 			<h1>AVA's Portfolio Website</h1>
-			<p>About...AVA's Portfolio.</p>
-			</div>
+			<p>About AVA's Portfolio</p>
 		</section>
 		</header>
 
@@ -48,47 +83,6 @@
 		</div>
 		</section>
 
-		<!--IMAGE SLIDER STARTS-->
-		<div class="slider">
-			<div class="slider">
-				<!-- RADIO BUTTONS STARTS-->
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
-				<input type="radio" name="radio-btn" id="radio4">
-		<!--RADIO BUTTON ENDS-->
-				<!-- SLIDE IMAGES STARTS-->
-				<div class="slide first">
-					<img src="images/light-movement.jpg" alt="light-movement" width="800" height="400" alt="">
-				</div>
-				<div class="slide second">
-					<img src="images/fire.jpg" alt="fire" width="800" height="400" alt="">
-				</div>
-				<div class="slide third">
-					<img src="images/shine-fabric.jpg" alt="shine-fabric" width="800" height="400" alt="">
-				</div>
-				<!--SLIDE IMAGES ENDS-->
-				<!--AUTOMATIC NAVIGATION STARTS-->
-				<div class="navigation-auto">
-					<div class="auto-btn1"></div>
-					<div class="auto-btn2"></div>
-					<div class="auto-btn3"></div>
-					<div class="auto-btn4"></div>
-				</div>
-				<!--AUTOMATIC NAVIGATION ENDS-->
-			</div>
-			<!--MANUAL NAVIGATION STARTS-->
-			<div class="navigation-manual">
-				<label for="radio1" class="manual-btn"></label>
-				<label for="radio2" class="manual-btn"></label>
-				<label for="radio3" class="manual-btn"></label>
-				<label for="radio4" class="manual-btn"></label>
-			</div>
-			<!--MANUAL NAVIGATION ENDS-->
-
-		</div>
-		<!--IMAGE SLIDER ENDS-->
-
 		<footer>
 			<div class="navigation">
 				<ul>
@@ -102,15 +96,34 @@
 
 		<div>
 		</div>
-		<script type="text/javascript">
-			var counter= 1;
-			setInterval(function(){
-				document.getElelmentById('radio' + counter)
-				counter++;
-				if(counter > 4){
-					counter = 1;
-				}
-			},5000);
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+			}
 		</script>
 
 	</body>
