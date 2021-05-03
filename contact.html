@@ -1,64 +1,70 @@
+<!DOCTYPE html>
 <html>
 	<!-- HEAD SECTION STARTS -->
-	<head>
-		<title>AVA's Portfolio Website</title>
-		<link href="css/styles.css" rel="stylesheet">
-		<title>Image Slider</title>
-		<meta name="viewport" content=" width=device-width, initial-scale=1"
-
-	</head>
-	<!-- HEAD SECTIONS ENDS -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AVA's Portfolio</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<title>Image Slider</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
+<!-- HEAD SECTION ENDS -->
 
 	<!-- BODY SECTION STARTS -->
 	<body>
+		<div class="gold-body">
+		<div class="black-body">
 		<header>
 			<div class="logo">
 				<a href="index.html" title="Go Back Home to Homepage"><img src="images/avas-logo.svg" alt="AVA's Portfolio" /></a>
 			</div>
+
+			<!-- SLIDESHOW STARTS -->
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">1 / 4</div>
+		  			<img src="images/paint.jpg" style="width: 100%; height: 350px;">
+		  			<div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">2 / 4</div>
+		  			<img src="images/light-movement.jpg" style="width: 100%; height: 350px;">
+		  			<div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">3 / 4</div>
+		  			<img src="images/fire.jpg" style="width: 100% height: 350px">
+		  			<div class="text">Caption Three</div>
+				</div>
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">4 / 4</div>
+		  			<img src="images/shine-fabric.jpg" style="width: 100% height: 350px">
+		  			<div class="text">Caption Four</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="slide-nav">
+		  			<span class="dot" onclick="currentSlide(1)"></span>
+		  			<span class="dot" onclick="currentSlide(2)"></span>
+		  			<span class="dot" onclick="currentSlide(3)"></span>
+		  			<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<!-- SLIDESHOW ENDS -->
 		</header>
 
-		<!-- SLIDESHOW STARTS -->
-		<div class="slideshow-container">
+		<section class="hero">
+			<h1>AVA's Portfolio Website</h1>
+			<p>About AVA's Portfolio </p>
+		</section>
 
-		<div class="mySlides fade">
-  			<div class="numbertext">1 / 4</div>
-  			<img src="images/paint.jpg" style="width:100%">
-  			<div class="text">Caption Text</div>
-		</div>
-
-		<div class="mySlides fade">
-  			<div class="numbertext">2 / 4</div>
-  			<img src="images/light-movement.jpg" style="width:100%">
-  			<div class="text">Caption Two</div>
-		</div>
-
-		<div class="mySlides fade">
-  			<div class="numbertext">3 / 4</div>
-  			<img src="images/fire.jpg" style="width:100%">
-  			<div class="text">Caption Three</div>
-		</div>
-
-		<div class="mySlides fade">
-  			<div class="numbertext">4 / 4</div>
-  			<img src="images/shine-fabric.jpg" style="width:100%">
-  			<div class="text">Caption Four</div>
-		</div>
-
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		</div>
-		<br>
-
-		<div style="text-align:center">
-  			<span class="dot" onclick="currentSlide(1)"></span>
-  			<span class="dot" onclick="currentSlide(2)"></span>
-  			<span class="dot" onclick="currentSlide(3)"></span>
-  			<span class="dot" onclick="currentSlide(4)"></span>
-		</div>
-<!-- SLIDESHOW ENDS -->
-
-		<section>
+		<section class="layout">
 			<div class="navigation">
 				<ul>
 					<li><a href="about.html" title="Learn more About Artist">About</a></li>
@@ -67,27 +73,35 @@
 					<li><a href="myportfolio.html" title="View artist Portfolio">My Portfolio</a></li>
 				</ul>
 			</div>
-		</section>
-
-		<section class="hero">
-			<h1>AVA's Portfolio Website</h1>
-			<p>About AVA's Portfolio </p>
-		</section>
-
-		<section>
-			<footer>
-				<form>
-					<label for="Name">Name</label>
-					<input type="text" id="name" name="name"/>
-					<label for="Email">Email</label>
-					<input type="text" id="email" name="email"/>
-					<label for="Subject">Subject</label>
-					<input type="text" id="subject" name="subject"/>
-					<label for="Type your message here...">Type your message here...</label>
-					<input type="text" id="type your message here..." name="type your message here..."/>
+	
+		<section class="content">
+			<form>
+				<div class="column column-right">
+					<div>
+						<label for="Name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Full Name"/>
+					</div>
+					<div>
+						<label for="Email">Email</label>
+						<input type="text" id="email" name="email" placeholder="Enter your Email"/>
+					</div>
+					<div>
+						<label for="Subject">Subject</label>
+						<input type="text" id="subject" name="subject" placeholder="Enter topic"/>
+					</div>
+				</div>
+				<div class="column">
+					<div>
+						<textarea name="message" placeholder="Type your message here..."></textarea>
+					</div>
 					<input type="submit" value="Submit"/>
-				</form>
+				</div>
+			</form>
+		</section>
+		</section>
 
+		<section>		
+			<footer>
 				<div class="navigation">
 				<ul>
 					<li><a href="about.html" title="Learn more About Artist">About</a></li>
@@ -98,9 +112,39 @@
 			</div>
 			</footer>
 		</section>
-
-		<div>
 		</div>
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+			}
+		</script>
+	</div>
+	</div>
 	</body>
 	<!-- BODY SECTION ENDS -->
 </html>

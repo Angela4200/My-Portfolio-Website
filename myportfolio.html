@@ -1,58 +1,70 @@
 <html>
-	<head>
-		<title>AVA's Portfolio Website</title>
-		<link href="css/styles.css" rel="stylesheet">
-	</head>
+<html>
+<!-- HEAD SECTION STARTS -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AVA's Portfolio</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<title>Image Slider</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
+<!-- HEAD SECTION ENDS -->
 
+<!-- BODY SECTION STARTS -->
 	<body>
+		<div class="gold-body">
+		<div class="black-body">
 		<header>
 			<div class="logo">
 				<a href="index.html" title="Go Back Home to Homepage"><img src="images/avas-logo.svg" alt="AVA's Portfolio" /></a>
 			</div>
+
+			<!-- SLIDESHOW STARTS -->
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">1 / 4</div>
+		  			<img src="images/paint.jpg" style="width:100%; height: 350px;">
+		  			<div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">2 / 4</div>
+		  			<img src="images/light-movement.jpg" style="width:100%; height: 350px;">
+		  			<div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">3 / 4</div>
+		  			<img src="images/fire.jpg" style="width:100%; height: 350px;">
+		  			<div class="text">Caption Three</div>
+				</div>
+
+				<div class="mySlides fade">
+		  			<div class="numbertext">4 / 4</div>
+		  			<img src="images/shine-fabric.jpg" style="width:100%; height: 350px;">
+		  			<div class="text">Caption Four</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="slide-nav">
+		  			<span class="dot" onclick="currentSlide(1)"></span>
+		  			<span class="dot" onclick="currentSlide(2)"></span>
+		  			<span class="dot" onclick="currentSlide(3)"></span>
+		  			<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<!-- SLIDESHOW ENDS -->
 		</header>
-		
-		<!-- SLIDESHOW STARTS -->
-		<div class="slideshow-container">
 
-		<div class="mySlides fade">
-  			<div class="numbertext">1 / 4</div>
-  			<img src="images./paint.jpg" style="width:100%">
-  			<div class="text">Caption Text</div>
-		</div>
+		<section class="hero">
+			<h1>AVA's Portfolio Website</h1>
+			<p>About AVA's Portfolio</p>
+		</section>
 
-		<div class="mySlides fade">
-  			<div class="numbertext">2 / 4</div>
-  			<img src="images/light-movement.jpg" style="width:100%">
-  			<div class="text">Caption Two</div>
-		</div>
-
-		<div class="mySlides fade">
-  			<div class="numbertext">3 / 4</div>
-  			<img src="images/fire.jpg" style="width:100%">
-  			<div class="text">Caption Three</div>
-		</div>
-
-		<div class="mySlides fade">
-  			<div class="numbertext">4 / 4</div>
-  			<img src="images/shine-fabric.jpg" style="width:100%">
-  			<div class="text">Caption Four</div>
-		</div>
-
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		</div>
-		<br>
-
-		<div style="text-align:center">
-  			<span class="dot" onclick="currentSlide(1)"></span>
-  			<span class="dot" onclick="currentSlide(2)"></span>
-  			<span class="dot" onclick="currentSlide(3)"></span>
-  			<span class="dot" onclick="currentSlide(4)"></span>
-		</div>
-<!-- SLIDESHOW ENDS -->
-
-		<section>
+		<section class="layout">
 			<div class="navigation">
 				<ul>
 					<li><a href="about.html" title="Learn more About Artist">About</a></li>
@@ -61,110 +73,133 @@
 					<li><a href="myportfolio.html" title="View artist Portfolio">My Portfolio</a></li>
 				</ul>
 			</div>
-		</section>
 
-		<section class="hero">
-			<h1>AVA's Portfolio Website</h1>
-			<p>About AVA's Portfolio</p>
-		</section>
+		<section class="content">
+			<div class="table">
+				<table>
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Medium</th>
+						<th>Size</th>
+					</tr>
 
-		<section class="table">
-			<table>
-				<tr>
-					<th>Title</th>
-					<th>Year</th>
-					<th>Medium</th>
-					<th>Size</th>
-				</tr>
+					<tr>
+						<td>Untitled</td>
+						<td>2019</td>
+						<td>Mixed Media</td>
+						<td>Dimensions Variable</td>
+					</tr>
+				</table>
 
-				<tr>
-					<td>Untitled</td>
-					<td>2019</td>
-					<td>Mixed Media</td>
-					<td>Dimensions Variable</td>
-				</tr>
-			</table>
+			<section>
+				<img src="images/wall.jpg" alt="wall">
+				<img src="images/detail.jpg" alt="detail">
+				<img src="images/installation.jpg" alt="installation">
+				<img src="images/above.jpg" alt="above">
+			</section>
 
-		<section>
-			<img src="images/wall.jpg" alt="wall">
-			<img src="images/detail.jpg" alt="detail">
-			<img src="images/installation.jpg" alt="installation">
-			<img src="images/above.jpg" alt="above">
-		</section>
+				<table> 
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Medium</th>
+						<th>Size</th>
+					</tr>
 
-			<table> 
-				<tr>
-					<th>Title</th>
-					<th>Year</th>
-					<th>Medium</th>
-					<th>Size</th>
-				</tr>
+					<tr>
+						<td>Marble</td>
+						<td>2019</td>
+						<td>Mixed Media</td>
+						<td>Dimensions Variable</td>
+					</tr>
+				</table>
 
-				<tr>
-					<td>Marble</td>
-					<td>2019</td>
-					<td>Mixed Media</td>
-					<td>Dimensions Variable</td>
-				</tr>
-			</table>
+			<section>
+				<img src="images/wall2.jpg" alt="wall2">
+				<img src="images/detail2.jpg" alt="detail2">
+				<img src="images/installation2.jpg" alt="installation2">
+				<img src="images/above2.jpg" alt="above2">
+			</section>
 
-		<section>
-			<img src="images/wall2.jpg" alt="wall2">
-			<img src="images/detail2.jpg" alt="detail2">
-			<img src="images/installation2.jpg" alt="installation2">
-			<img src="images/above2.jpg" alt="above2">
-		</section>
+				<table> 
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Medium</th>
+						<th>Size</th>
+					</tr>
 
-			<table> 
-				<tr>
-					<th>Title</th>
-					<th>Year</th>
-					<th>Medium</th>
-					<th>Size</th>
-				</tr>
+					<tr>
+						<td>In Through the Out</td>
+						<td>2019</td>
+						<td>Mixed Media</td>
+						<td>Dimensions Variable</td>
+					</tr>
+				</table>
 
-				<tr>
-					<td>In Through the Out</td>
-					<td>2019</td>
-					<td>Mixed Media</td>
-					<td>Dimensions Variable</td>
-				</tr>
-			</table>
+			<section>
+				<img src="images/wall3.jpg" alt="wall3">
+				<img src="images/detail3.jpg" alt="detail3">
+				<img src="images/installation3.jpg" alt="installation3">
+				<img src="images/above3.jpg" alt="above3">
+			</section>
 
-		<section>
-			<img src="images/wall3.jpg" alt="wall3">
-			<img src="images/detail3.jpg" alt="detail3">
-			<img src="images/installation3.jpg" alt="installation3">
-			<img src="images/above3.jpg" alt="above3">
-		</section>
+				<table> 
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Medium</th>
+						<th>Size</th>
+					</tr>
 
-			<table> 
-				<tr>
-					<th>Title</th>
-					<th>Year</th>
-					<th>Medium</th>
-					<th>Size</th>
-				</tr>
+					<tr>
+						<td>Untitled</td>
+						<td>2019</td>
+						<td>Mixed Media</td>
+						<td>Dimensions Variable</td>
+					</tr>
+				</table>
 
-				<tr>
-					<td>Untitled</td>
-					<td>2019</td>
-					<td>Mixed Media</td>
-					<td>Dimensions Variable</td>
-				</tr>
-			</table>
-
-		<section>
-			<img src="images/wall4.jpg" alt="wall4">
-			<img src="images/detail4.jpg" alt="detail4">
-			<img src="images/installation4.jpg" alt="installation4">
-			<img src="images/above4.jpg" alt="above4">
-		</section>
+			<section>
+				<img src="images/wall4.jpg" alt="wall4">
+				<img src="images/detail4.jpg" alt="detail4">
+				<img src="images/installation4.jpg" alt="installation4">
+				<img src="images/above4.jpg" alt="above4">
+			</section>
 
 		</section>
-
 		<div>
 		</div>
-		
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+			}
+		</script>
+		</div>
+		</div>
 	</body>
 </html>
