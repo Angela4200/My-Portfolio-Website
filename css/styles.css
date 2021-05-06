@@ -287,45 +287,72 @@ form textarea{
   margin-bottom: 1rem;
 }
 
+section.content a{
+  color: #AC79A0;
 
-@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 600px) {
   header.hero nav{
     height: 40px;
     width: 100%;
+  }
+
+  header.navigation div ul {
+    margin: 1rem 0;
+    flex: none;
+    display: block;
+    padding: 0;
+    display: block;
+  }
+
+  section.navigation div ul li a{
+    padding: 1rem 0.4rem;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  header.hero section h1{
+    font-size: 30px;
+    line-height: 10px;
+  }
+
+  header.logo div{
+    size: 10px;
+  }
+
+  header.slideshow div{
+    size: 45px;
+  } 
+
+  section.content{
+    flex: 70%;
+    padding: 1rem;
+  }
+
+  header{
+    display: block;
+  }
+
+  header .logo{
+    flex: none;
+    position: relative;
+  }
+
+  .slideshow-container{
+    margin-left: 0;
+  }
+
+  section.hero h1{
+    font-size: 50px;
+  }
+
+  section.layout{
+    display: block;
+  }
+
+
 }
-
-header.navigation div ul {
-  margin: 1rem 0;
-  flex: none;
-  display: block;
-  padding: 0;
-  display: block;
-}
-
-section.navigation div ul li a{
-  padding: 1rem 0.4rem;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-header.hero section h1{
-  font-size: 30px;
-  line-height: 10px;
-}
-
-header.logo div{
-  size: 10px;
-}
-
-header.slideshow div{
-  size: 45px;
-} 
-
-section.content{
-  flex: 70%;
-  padding: 1rem;
-}
-
 
 
 
