@@ -146,6 +146,7 @@ div.navigation ul li a{
 /* Change background color of buttons on hover */
 div.navigation ul li a:hover {
 background-color: #DFC8D1;
+color: #800000;
 }
 
 /* Create an active/current tablink class */
@@ -304,6 +305,7 @@ section.content a{
     display: block;
     padding: 0;
     display: block;
+    text-decoration: none;
   }
 
   section.navigation div ul li a{
